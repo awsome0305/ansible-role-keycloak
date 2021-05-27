@@ -1,0 +1,14 @@
+[Unit]
+Description=KeyCloak Server
+After=network.target
+
+[Service]
+Type=idle
+User=keycloak
+Group=keycloak
+ExecStart=/bin/bash -c "{{ keycloak_jboss_home }}/bin/standalone.sh -b={{ keycloak_bind_address }} -c standalone.xml
+TimeoutStartSec=600
+TimeoutStopSec=600
+
+[Install]
+WantedBy=multi-user.target
