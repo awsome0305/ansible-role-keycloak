@@ -56,7 +56,7 @@
   - name: start keycloak
     systemd:
       name: keycloak
-      state: start
+      state: started
       enabled: yes
 
 
