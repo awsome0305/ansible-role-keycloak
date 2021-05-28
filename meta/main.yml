@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: Awsomehan
+  description: Keycloak installer for Circle Linux Infrastructure
+  company: Circle Linux
+  license: MIT
+  min_ansible_version: 2.8
+  platforms:
+    - name: EL
+      versions:
+        - 8
+  galaxy_tags:
+    - keycloak
+dependencies: []
